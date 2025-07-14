@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們 - 冬山生命禮儀公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+        }
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .value-item {
+            transition: all 0.3s ease;
+        }
+        .value-item:hover {
+            transform: scale(1.05);
+        }
+        .timeline-item {
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #3b82f6, #e5e7eb);
+        }
+        .timeline-item:last-child::before {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 導航欄 -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="../assets/images/IMG_8710.jpg" alt="愛心" class="inline-block align-middle mr-3" style="width: 8rem; height: 8rem; object-fit: cover; border-radius: 0.5rem;">
+                    <span class="text-xl font-bold text-gray-800">冬山生命禮儀</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="home.html" class="text-gray-600 hover:text-blue-600">首頁</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600">服務項目</a>
+                    <a href="process.html" class="text-gray-600 hover:text-blue-600">服務流程</a>
+                    <a href="about.html" class="text-blue-600 font-semibold">關於我們</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">聯絡我們</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
+                    <span class="text-sm font-semibold text-gray-800">0920663393</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 頁面標題 -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">關於冬山生命禮儀</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                專業、溫暖、貼心的生命禮儀服務機構<br>
+                用愛與專業陪伴每個家庭走過人生重要時刻
+            </p>
+        </div>
+    </section>
+
+    <!-- 公司簡介 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="公司外觀" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                        <i class="fas fa-building text-blue-600 mr-3"></i>
+                        關於我們
+                    </h2>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        冬山生命禮儀公司成立於2010年，是宜蘭地區最具聲譽的生命禮儀服務機構之一。
+                        我們秉持「以心服務，以愛相伴」的經營理念，為每個家庭提供最專業、最溫暖的告別儀式服務。
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        十多年來，我們已經服務超過3,000個家庭，累積了豐富的經驗與良好的口碑。
+                        我們深信，每一個生命都值得被尊重與紀念，因此我們用最真摯的心意，
+                        為逝者規劃莊嚴的告別儀式，為家屬提供最貼心的支持與陪伴。
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-blue-50 rounded-lg">
+                            <h3 class="text-2xl font-bold text-blue-600">14+</h3>
+                            <p class="text-gray-600">年服務經驗</p>
+                        </div>
+                        <div class="text-center p-4 bg-green-50 rounded-lg">
+                            <h3 class="text-2xl font-bold text-green-600">3000+</h3>
+                            <p class="text-gray-600">服務家庭</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 經營理念 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">經營理念與核心價值</h2>
+                <p class="text-gray-600 text-lg">我們的信念指引著每一次的服務</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="value-item bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <img src="../assets/images/IMG_8710.jpg" alt="愛心" style="width: 8rem; height: 8rem; object-fit: cover; border-radius: 0.5rem;">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">以心服務</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        用真誠的心對待每一位客戶，設身處地為家屬著想，
+                        提供最貼心的服務與陪伴，讓每個家庭都能感受到我們的關懷與溫暖。
+                    </p>
+                </div>
+
+                <div class="value-item bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="bg-amber-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">專業品質</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        持續提升專業技能，引進先進設備，
+                        堅持高品質的服務標準，確保每一個環節都能達到最高的專業水準。
+                    </p>
+                </div>
+
+                <div class="value-item bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hands-helping text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">以愛相伴</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        在最困難的時刻給予家屬最大的支持，
+                        用愛心與耐心陪伴每個家庭度過悲傷，讓告別成為美好的回憶。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司歷程 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">公司發展歷程</h2>
+                <p class="text-gray-600 text-lg">見證我們的成長與發展</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-item pl-16 pb-12">
+                    <div class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center absolute left-0 top-0">
+                        <span class="text-white font-bold">1</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">2010年 - 公司成立</h3>
+                        <p class="text-gray-600">
+                            冬山生命禮儀公司正式成立，以「專業、溫暖、貼心」為服務宗旨，
+                            開始為宜蘭地區的家庭提供生命禮儀服務。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item pl-16 pb-12">
+                    <div class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center absolute left-0 top-0">
+                        <span class="text-white font-bold">2</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">2013年 - 擴大服務範圍</h3>
+                        <p class="text-gray-600">
+                            增設專業美容室和冷凍設備，引進先進的殯葬技術，
+                            服務品質獲得客戶一致好評，業務範圍擴展至整個宜蘭縣。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item pl-16 pb-12">
+                    <div class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center absolute left-0 top-0">
+                        <span class="text-white font-bold">3</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">2017年 - 獲得認證</h3>
+                        <p class="text-gray-600">
+                            通過政府相關部門的嚴格審核，取得正式營業執照，
+                            成為宜蘭地區首批獲得官方認證的生命禮儀服務機構。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item pl-16 pb-12">
+                    <div class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center absolute left-0 top-0">
+                        <span class="text-white font-bold">4</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">2020年 - 數位化服務</h3>
+                        <p class="text-gray-600">
+                            建立線上諮詢平台，推出24小時客服系統，
+                            讓家屬可以隨時獲得專業諮詢與協助，提升服務便利性。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item pl-16">
+                    <div class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center absolute left-0 top-0">
+                        <span class="text-white font-bold">5</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">2024年 - 持續創新</h3>
+                        <p class="text-gray-600">
+                            持續投資設備更新和員工培訓，導入環保理念，
+                            致力於提供更加人性化和環保的生命禮儀服務。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專業團隊 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">專業服務團隊</h2>
+                <p class="text-gray-600 text-lg">經驗豐富的專業人員，為您提供最好的服務</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="team-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="張總經理" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">張志明 總經理</h3>
+                        <p class="text-blue-600 font-semibold mb-3">公司創辦人</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            從事生命禮儀服務20年，擁有豐富的實務經驗和深厚的專業知識，
+                            致力於推動業界服務品質的提升。
+                        </p>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">禮儀師證照</span>
+                            <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">管理師證照</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1594824720659-0d87417ab37c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="林協理" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">林淑芬 業務協理</h3>
+                        <p class="text-blue-600 font-semibold mb-3">客戶服務主管</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            專精於客戶關係管理和服務流程規劃，擁有15年的業界經驗，
+                            以細心和耐心贏得無數家屬的信任與好評。
+                        </p>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">禮儀師證照</span>
+                            <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs">諮詢師證照</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="陳主任" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">陳美雲 美容主任</h3>
+                        <p class="text-blue-600 font-semibold mb-3">專業美容師</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            專業遺體美容師，擁有12年的專業經驗，
+                            以精湛的技術和細膩的手法，讓逝者以最安詳的容貌與親友告別。
+                        </p>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">美容師證照</span>
+                            <span class="bg-amber-100 text-amber-700 px-2 py-1 rounded text-xs">技術指導師</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 認證與資質 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">認證與資質</h2>
+                <p class="text-gray-600 text-lg">政府核准立案，專業認證齊全</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">營業執照</h3>
+                    <p class="text-gray-600 text-sm">政府核准合法立案<br>執照字號：XX-XXXX-XXXX</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">品質認證</h3>
+                    <p class="text-gray-600 text-sm">ISO 9001品質管理<br>系統認證</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-graduate text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">專業證照</h3>
+                    <p class="text-gray-600 text-sm">禮儀師專業證照<br>美容師技術證照</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">保險保障</h3>
+                    <p class="text-gray-600 text-sm">責任保險保障<br>服務品質保證</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務區域 -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">服務區域</h2>
+                <p class="text-xl">為宜蘭地區提供全方位的生命禮儀服務</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white bg-opacity-20 p-6 rounded-lg text-center">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">宜蘭市</h3>
+                    <p class="text-sm opacity-90">主要服務區域</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 p-6 rounded-lg text-center">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">羅東鎮</h3>
+                    <p class="text-sm opacity-90">主要服務區域</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 p-6 rounded-lg text-center">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">冬山鄉</h3>
+                    <p class="text-sm opacity-90">總部所在地</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 p-6 rounded-lg text-center">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">其他鄉鎮</h3>
+                    <p class="text-sm opacity-90">服務範圍涵蓋</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-lg">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    24小時服務專線：0920663393
+                </p>
+                <p class="mt-2 opacity-90">
+                    無論您身在宜蘭哪個角落，我們都會在第一時間為您提供專業服務
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <img src="../assets/images/IMG_8710.jpg" alt="愛心" class="inline-block align-middle mr-2" style="width: 6rem; height: 6rem; object-fit: cover; border-radius: 0.5rem;">
+                        冬山生命禮儀
+                    </h3>
+                    <p class="text-gray-400">
+                        以心服務，以愛相伴<br>
+                        為每個家庭提供最專業溫暖的告別儀式服務
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">服務項目</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>告別式規劃</li>
+                        <li>殯葬一條龍服務</li>
+                        <li>墓園塔位服務</li>
+                        <li>法事超度服務</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">聯絡資訊</h4>
+                    <div class="text-gray-400 space-y-2">
+                        <p><i class="fas fa-phone mr-2"></i>0920663393</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>冬山鄉冬山路160號</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 冬山生命禮儀公司 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html> 

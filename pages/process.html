@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服務流程 - 冬山生命禮儀公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+        }
+        .process-step {
+            position: relative;
+        }
+        .process-step::after {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100px;
+            background: linear-gradient(to bottom, #3b82f6, #e5e7eb);
+        }
+        .process-step:last-child::after {
+            display: none;
+        }
+        .step-card {
+            transition: all 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .document-item {
+            transition: all 0.3s ease;
+        }
+        .document-item:hover {
+            background-color: #f3f4f6;
+            border-left-color: #3b82f6;
+        }
+        .timeline-dot {
+            background: linear-gradient(135deg, #3b82f6, #1e40af);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 導航欄 -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="../assets/images/IMG_8710.jpg" alt="愛心" class="inline-block align-middle mr-3" style="width: 8rem; height: 8rem; object-fit: cover; border-radius: 0.5rem;">
+                    <span class="text-xl font-bold text-gray-800">冬山生命禮儀</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="home.html" class="text-gray-600 hover:text-blue-600">首頁</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600">服務項目</a>
+                    <a href="process.html" class="text-blue-600 font-semibold">服務流程</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">關於我們</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">聯絡我們</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
+                    <span class="text-sm font-semibold text-gray-800">0920663393</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 頁面標題 -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">服務流程說明</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                清楚透明的服務流程，讓您了解每個階段的安排與準備，<br>
+                我們的專業團隊將全程陪伴您渡過這段時光
+            </p>
+        </div>
+    </section>
+
+    <!-- 服務流程步驟 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">完整服務流程</h2>
+                <p class="text-gray-600 text-lg">8個步驟，專業細緻的全程服務</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <!-- 步驟 1 -->
+                <div class="process-step mb-16">
+                    <div class="step-card bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="timeline-dot w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                                1
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    <i class="fas fa-phone text-blue-600 mr-2"></i>
+                                    緊急聯絡與諮詢
+                                </h3>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-700 mb-3">聯絡方式</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li class="flex items-center">
+                                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                                24小時服務專線：0920663393
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                                緊急聯絡手機：0920663393
+                                            </li>
+                                            <!-- <li class="flex items-center">
+                                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                                LINE客服：@dongshan-life
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-700 mb-3">初步諮詢</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li class="flex items-center">
+                                                <i class="fas fa-circle text-blue-400 mr-2 text-xs"></i>
+                                                了解基本狀況與需求
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fas fa-circle text-blue-400 mr-2 text-xs"></i>
+                                                說明服務內容與流程
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fas fa-circle text-blue-400 mr-2 text-xs"></i>
+                                                安排專業人員前往
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步驟 2 -->
+                <div class="process-step mb-16">
+                    <div class="step-card bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="timeline-dot w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                                2
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    <i class="fas fa-ambulance text-blue-600 mr-2"></i>
+                                    專業接體服務
+                                </h3>
+                                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                                    <p class="text-gray-700 mb-4">
+                                        我們的專業團隊將在第一時間趕赴現場，以最莊重的方式接送逝者，
+                                        並協助家屬處理現場相關事宜。
+                                    </p>
+                                    <div class="grid md:grid-cols-3 gap-4">
+                                        <div class="text-center">
+                                            <i class="fas fa-clock text-blue-600 text-2xl mb-2"></i>
+                                            <p class="font-semibold text-gray-800">快速到場</p>
+                                            <p class="text-sm text-gray-600">30分鐘內到達</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <i class="fas fa-car text-blue-600 text-2xl mb-2"></i>
+                                            <p class="font-semibold text-gray-800">專用車輛</p>
+                                            <p class="text-sm text-gray-600">專業接體設備</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <i class="fas fa-user-md text-blue-600 text-2xl mb-2"></i>
+                                            <p class="font-semibold text-gray-800">專業團隊</p>
+                                            <p class="text-sm text-gray-600">經驗豐富人員</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步驟 3 -->
+                <div class="process-step mb-16">
+                    <div class="step-card bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="timeline-dot w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                                3
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    <i class="fas fa-file-contract text-blue-600 mr-2"></i>
+                                    服務合約與規劃
+                                </h3>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-700 mb-3">合約簽署</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 詳細說明服務內容與費用</li>
+                                            <li>• 確認服務方案與時程安排</li>
+                                            <li>• 簽署正式服務合約</li>
+                                            <li>• 收取服務訂金</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-700 mb-3">初步規劃</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 了解家屬期望與預算</li>
+                                            <li>• 規劃告別式風格與規模</li>
+                                            <li>• 選擇會場與時間</li>
+                                            <li>• 安排後續服務流程</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步驟 4 -->
+                <div class="process-step mb-16">
+                    <div class="step-card bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="timeline-dot w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                                4
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    <i class="fas fa-spa text-blue-600 mr-2"></i>
+                                    遺體處理與美容
+                                </h3>
+                                <div class="bg-blue-50 p-6 rounded-lg">
+                                    <p class="text-gray-700 mb-4">
+                                        在專業冷凍設備中妥善保存遺體，並進行防腐處理、清潔美容，
+                                        讓逝者以最安詳的容貌與親友告別。
+                                    </p>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h5 class="font-semibold text-gray-800 mb-2">
+                                                <i class="fas fa-shield-alt text-green-600 mr-2"></i>
+                                                防腐處理
+                                            </h5>
+                                            <p class="text-sm text-gray-600">使用安全環保的防腐技術</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h5 class="font-semibold text-gray-800 mb-2">
+                                                <i class="fas fa-palette text-purple-600 mr-2"></i>
+                                                專業美容
+                                            </h5>
+                                            <p class="text-sm text-gray-600">資深美容師精心化妝打扮</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步驟 5 -->
+                <div class="process-step mb-16">
+                    <div class="step-card bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="timeline-dot w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                                5
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    <i class="fas fa-palette text-blue-600 mr-2"></i>
+                                    告別式會場佈置
+                                </h3>
+                                <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="會場佈置" class="w-full h-48 object-cover rounded-lg mb-4">
+                                <div class="grid md:grid-cols-3 gap-4">
+                                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                        <i class="fas fa-seedling text-green-600 text-2xl mb-2"></i>
+                                        <h5 class="font-semibold text-gray-800">花藝設計</h5>
+                                        <p class="text-sm text-gray-600">精美花藝布置</p>
+                                    </div>
+                                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                        <i class="fas fa-lightbulb text-yellow-600 text-2xl mb-2"></i>
+                                        <h5 class="font-semibold text-gray-800">燈光音響</h5>
+                                        <p class="text-sm text-gray-600">專業設備配置</p>
+                                    </div>
+                                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                        <i class="fas fa-chair text-blue-600 text-2xl mb-2"></i>
+                                        <h5 class="font-semibold text-gray-800">座位安排</h5>
+                                        <p class="text-sm text-gray-600">合理空間規劃</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步驟 6 -->
+                <div class="process-step mb-16">
+                    <div class="step-card bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="timeline-dot w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                                6
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    <i class="fas fa-pray text-blue-600 mr-2"></i>
+                                    告別式儀式進行
+                                </h3>
+                                <div class="bg-amber-50 p-6 rounded-lg">
+                                    <h4 class="text-lg font-semibold text-gray-800 mb-4">儀式流程</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center space-x-3">
+                                            <span class="bg-amber-200 text-amber-800 px-2 py-1 rounded text-sm font-medium">09:00</span>
+                                            <span class="text-gray-700">賓客報到與簽名</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="bg-amber-200 text-amber-800 px-2 py-1 rounded text-sm font-medium">09:30</span>
+                                            <span class="text-gray-700">家屬致謝詞</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="bg-amber-200 text-amber-800 px-2 py-1 rounded text-sm font-medium">10:00</span>
+                                            <span class="text-gray-700">追思影片播放</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="bg-amber-200 text-amber-800 px-2 py-1 rounded text-sm font-medium">10:30</span>
+                                            <span class="text-gray-700">賓客致意與獻花</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="bg-amber-200 text-amber-800 px-2 py-1 rounded text-sm font-medium">11:00</span>
+                                            <span class="text-gray-700">封棺儀式</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步驟 7 -->
+                <div class="process-step mb-16">
+                    <div class="step-card bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="timeline-dot w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                                7
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    <i class="fas fa-route text-blue-600 mr-2"></i>
+                                    火化與後續安排
+                                </h3>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-700 mb-3">火化程序</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 協助前往火化場</li>
+                                            <li>• 辦理火化相關手續</li>
+                                            <li>• 陪同家屬進行火化儀式</li>
+                                            <li>• 協助取回骨灰</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-700 mb-3">安置安排</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 選擇合適的安置方式</li>
+                                            <li>• 安排墓園或納骨塔</li>
+                                            <li>• 協助相關文件申請</li>
+                                            <li>• 進行安葬儀式</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步驟 8 -->
+                <div class="process-step">
+                    <div class="step-card bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="timeline-dot w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                                8
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    <i class="fas fa-handshake text-blue-600 mr-2"></i>
+                                    後續關懷服務
+                                </h3>
+                                <div class="bg-green-50 p-6 rounded-lg">
+                                    <p class="text-gray-700 mb-4">
+                                        服務不會在告別式結束後就停止，我們會持續關懷家屬，
+                                        提供後續需要的協助與支持。
+                                    </p>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <h5 class="font-semibold text-gray-800 mb-2">
+                                                <i class="fas fa-calendar text-blue-600 mr-2"></i>
+                                                定期關懷
+                                            </h5>
+                                            <p class="text-sm text-gray-600">節日問候與關懷電話</p>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold text-gray-800 mb-2">
+                                                <i class="fas fa-question-circle text-green-600 mr-2"></i>
+                                                諮詢服務
+                                            </h5>
+                                            <p class="text-sm text-gray-600">提供後續相關問題解答</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 必要文件準備 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">必要文件準備清單</h2>
+                <p class="text-gray-600 text-lg">請準備以下文件，以便順利進行各項手續</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">
+                        <i class="fas fa-user text-blue-600 mr-2"></i>
+                        逝者相關文件
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="document-item p-3 border-l-4 border-gray-300 bg-white rounded">
+                            <h4 class="font-semibold text-gray-800">身分證正本</h4>
+                            <p class="text-sm text-gray-600">用於辦理死亡證明等手續</p>
+                        </div>
+                        <div class="document-item p-3 border-l-4 border-gray-300 bg-white rounded">
+                            <h4 class="font-semibold text-gray-800">戶口名簿</h4>
+                            <p class="text-sm text-gray-600">確認戶籍資料與關係</p>
+                        </div>
+                        <div class="document-item p-3 border-l-4 border-gray-300 bg-white rounded">
+                            <h4 class="font-semibold text-gray-800">健保卡</h4>
+                            <p class="text-sm text-gray-600">辦理健保相關手續</p>
+                        </div>
+                        <div class="document-item p-3 border-l-4 border-gray-300 bg-white rounded">
+                            <h4 class="font-semibold text-gray-800">印章</h4>
+                            <p class="text-sm text-gray-600">簽署各項文件使用</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">
+                        <i class="fas fa-users text-green-600 mr-2"></i>
+                        家屬相關文件
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="document-item p-3 border-l-4 border-gray-300 bg-white rounded">
+                            <h4 class="font-semibold text-gray-800">申請人身分證</h4>
+                            <p class="text-sm text-gray-600">主要申請人的身分證明</p>
+                        </div>
+                        <div class="document-item p-3 border-l-4 border-gray-300 bg-white rounded">
+                            <h4 class="font-semibold text-gray-800">親屬關係證明</h4>
+                            <p class="text-sm text-gray-600">證明與逝者的關係</p>
+                        </div>
+                        <div class="document-item p-3 border-l-4 border-gray-300 bg-white rounded">
+                            <h4 class="font-semibold text-gray-800">醫院診斷證明</h4>
+                            <p class="text-sm text-gray-600">死亡診斷證明書</p>
+                        </div>
+                        <div class="document-item p-3 border-l-4 border-gray-300 bg-white rounded">
+                            <h4 class="font-semibold text-gray-800">其他相關文件</h4>
+                            <p class="text-sm text-gray-600">視個案需求準備</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">有任何問題嗎？</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                我們的專業團隊隨時為您解答疑問，提供詳細的流程說明與協助
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg font-semibold text-lg">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    24小時專線諮詢
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <img src="../assets/images/IMG_8710.jpg" alt="愛心" class="inline-block align-middle mr-2" style="width: 6rem; height: 6rem; object-fit: cover; border-radius: 0.5rem;">
+                        冬山生命禮儀
+                    </h3>
+                    <p class="text-gray-400">
+                        以心服務，以愛相伴<br>
+                        為每個家庭提供最專業溫暖的告別儀式服務
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">服務項目</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>告別式規劃</li>
+                        <li>殯葬一條龍服務</li>
+                        <li>墓園塔位服務</li>
+                        <li>法事超度服務</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">聯絡資訊</h4>
+                    <div class="text-gray-400 space-y-2">
+                        <p><i class="fas fa-phone mr-2"></i>0920663393</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>冬山鄉冬山路160號</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 冬山生命禮儀公司 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html> 
